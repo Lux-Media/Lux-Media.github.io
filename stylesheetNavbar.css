@@ -1,0 +1,130 @@
+
+  
+  /* Style the header */
+  .header {
+  overflow: hidden;
+  background-color: #9f9f9f;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  }
+  
+  /* Style the links inside the header */
+  .header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  }
+  
+  /* Style the logo link */
+  .header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 25px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+  background-color: rgb(219, 10, 10);
+  color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-content {
+  margin-left: auto;
+  margin-right: 2%;
+  }
+  
+  /* Hides the link that should open and close the topnav on small screens */
+  .header .icon {
+  display: none;
+  }
+  
+  /* makes the navbar stick to the top when scrolling*/
+  .sticky {
+    position: sticky;
+    top: 0px;
+  }
+
+  /*wraps the triangle and its shadow*/
+  .triangle-wrap {
+    display: flex;
+  }
+
+  /*adds a triangle shape below the navbar by creating a second triangle and hidding it behind the first one*/
+  .triangleshape {
+    z-index: 1;
+    width: 100%;
+    background-color: #9f9f9f;
+    padding: 25px;
+    clip-path: polygon(100% 0%, 0 0, 80% 100%);
+    top: 107px;
+  }
+
+  /*adds a shadow to the triangle below the navbar*/
+  .triangleshadow {
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
+    background-color: #727272;
+    padding: 30px;
+    clip-path: polygon(100% 0%, 10% 10%, 80% 100%);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+/*hides the triangle shape and the shadow below the navbar*/
+  .triangle-wrap.sticky.responsive {
+    display: none;
+  }
+
+
+  /* this code changes how the Nacbar looks before opened when the screen is smaller than 600px*/
+  /* When the screen is less than 600 pixels wide, hide all links. Show the link that should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+  .header a {
+    display: none;
+  }
+  .header a.icon {
+    display: flex;
+    margin-left: auto;
+  }
+  .header a.logo{
+    float: left;
+    display: block;
+  }
+  }
+  
+  /* this code opens the navbar when the screen is smaller than 600px is*/
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+  .header.responsive {
+    position: relative;
+    display: block;    
+  }
+  .header.responsive a.icon {
+    display: none;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }
