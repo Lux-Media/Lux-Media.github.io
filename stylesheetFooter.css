@@ -13,13 +13,21 @@ canvas {
 
 }
 
-.footer-icons, .footer-links {
+.footer-icons,
+.footer-links {
     z-index: 1;
     position: relative;
 }
 
-.footer-distributed.footer-left.footer-links a:hover {
+.footer-distributed .footer-links a:hover {
     color: #fc3565;
+    text-decoration: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+
 }
 
 
@@ -61,7 +69,7 @@ canvas {
 }
 
 .footer-distributed h3 span {
-    color: lightseagreen;
+    color:  #fc3565;
 }
 
 /* Footer links */
@@ -81,7 +89,7 @@ canvas {
 }
 
 .footer-distributed .footer-company-name {
-
+    color: #92999f;;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
@@ -127,7 +135,7 @@ canvas {
 }
 
 .footer-distributed .footer-center p a {
-    color: lightseagreen;
+    color:  #fc3565;
     text-decoration: none;
     ;
 }
