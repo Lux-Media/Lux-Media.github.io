@@ -18,7 +18,7 @@ function openTopNav() {
     else {
       x.className = "header";
     }
-}
+};
 
 
 //when user clicks on the already active page it just scrolls up instead of reloading
@@ -97,4 +97,4 @@ function stickynavbar() {
     a = true;
     navbar.classList.remove("sticky");
   }
-}
+};
