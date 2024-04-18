@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
 .canvas {
     background: #282931;
     height: 60vh;
@@ -31,7 +34,6 @@ canvas {
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
 * {
     font-family: Open Sans;
@@ -101,6 +103,15 @@ canvas {
     width: 35%;
 }
 
+.footer-center-container {
+    display: flex;
+}
+
+.footer-center-container p{
+    z-index: 1;
+    align-self: center;
+}
+
 .footer-distributed .footer-center i {
 
     color: #ffffff;
@@ -110,7 +121,8 @@ canvas {
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
-    margin: 10px 15px;
+    margin: 10px;
+    margin-right: 0px;
     vertical-align: middle;
 }
 
@@ -199,6 +211,15 @@ canvas {
 
 }
 
+.footer-distributed .footer-icons a:hover {
+    color:  #fc3565;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
@@ -227,6 +248,15 @@ canvas {
         width: 100%;
         overflow: hidden;
         z-index: -1;
+    }
+
+    .footer-center-container {
+        display: block;
+    }
+
+    .footer-center-container p{
+        position: relative;
+        z-index: 1;
     }
 
 }
