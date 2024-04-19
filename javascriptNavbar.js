@@ -1,6 +1,26 @@
 //const debug = document.getElementById('debug');
 let a = true;
 
+// When the user scrolls the page, execute stickynavbar
+window.onscroll = function() {stickynavbar();};
+
+//gets the topnav 
+const navbar = document.getElementById('topnav');
+
+
+// Gets the offset position of the topnav
+const sticky = navbar.offsetTop;
+
+// Adds the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickynavbar() {
+  if (window.scrollY > sticky) {
+    navbar.classList.add("sticky");
+
+  } else {
+    a = true;
+    navbar.classList.remove("sticky");
+  }
+};
 
 // opens the Topnav when clicked on by adding the css class 
 function openTopNav() {
@@ -78,23 +98,3 @@ document.addEventListener('scroll', (event) => {
   }
 });
 
-// When the user scrolls the page, execute stickynavbar
-window.onscroll = function() {stickynavbar();};
-
-//gets the topnav 
-const navbar = document.getElementById('topnav');
-
-
-// Gets the offset position of the topnav
-const sticky = navbar.offsetTop;
-
-// Adds the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickynavbar() {
-  if (window.scrollY > sticky) {
-    navbar.classList.add("sticky");
-
-  } else {
-    a = true;
-    navbar.classList.remove("sticky");
-  }
-};
