@@ -5,7 +5,7 @@ let a = true;
 window.onscroll = function() {stickynavbar();};
 
 //gets the topnav 
-const navbar = document.getElementById('topnav');
+const navbar = document.getElementById("topnav");
 
 
 // Gets the offset position of the topnav
@@ -42,7 +42,7 @@ function openTopNav() {
 
 
 //when user clicks on the already active page it just scrolls up instead of reloading
-const active = document.getElementById('active');
+const active = document.getElementById("active");
 document.addEventListener('click', (event) => {
   if (active.contains(event.target)) {
     $('html, body').animate({ scrollTop: 0 }, 'slow');  
@@ -51,8 +51,8 @@ document.addEventListener('click', (event) => {
 
 
 // hides the topnav when a click event occurs outside the menu
-const menuButton = document.getElementById('navbutton');
-const menu = document.getElementById('topnav');
+const menuButton = document.getElementById("navbutton");
+const menu = document.getElementById("topnav");
 
 
 document.addEventListener('click', (event) => {
