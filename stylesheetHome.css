@@ -46,11 +46,6 @@ body {
     object-fit: cover;
 }
 
-@media only screen and (min-width: 768px) {
-    .image-gallery {
-        flex-direction: row;
-    }
-}
 
 /* overlay styles */
 
@@ -80,19 +75,9 @@ body {
     transform: scale(1);
 }
 
+@media only screen and (min-width: 768px) {
+    .image-gallery {
+        flex-direction: row;
+    }
+}
 
-@keyframes enter-animation {
-    0% {
-      transform: translateY(100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .image-animation {
-      animation: enter-animation 0.8s 1;
-    }
-  }
