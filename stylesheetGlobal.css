@@ -16,10 +16,12 @@ body{
     text-align: center;
 }
 
-.site-content.responsive{
+.site-content-buffer.responsive {
     padding-top: 50px;
+    
 }
 
 html{
     -webkit-font-smoothing: antialiased;
 }
+

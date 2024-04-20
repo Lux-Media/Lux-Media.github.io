@@ -81,7 +81,7 @@ document.addEventListener('scroll', (event) => {
 //hides the triangle under the topnav when scrolling down
 document.addEventListener('scroll', (event) => {
   const z = document.getElementById("triangle");
-  const s = document.getElementById("site-content");
+  const s = document.getElementById("site-content-buffer");
 
   if(document.documentElement.scrollTop > 170) {
     if(z.className === "triangle-wrap sticky"){

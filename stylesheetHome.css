@@ -5,12 +5,14 @@ Responsive Image gallery Style rules
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    z-index: -2;
+    position: relative;
 }
 
 .container {
     padding: 40px 5%;
-    z-index: -1;
     position: relative;
+    z-index: -1;
 }
 
 .heading-text {
