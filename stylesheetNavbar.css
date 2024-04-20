@@ -3,7 +3,7 @@
   /* Style the header */
   .header {
   overflow: hidden;
-  background-color: #9f9f9f;
+  background-color: #282931;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   /* Style the links inside the header */
   .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 15px;
   padding-left: 20px;
@@ -38,7 +38,7 @@
   
   /* Style the active/current link*/
   .header a.active {
-  background-color: rgb(219, 10, 10);
+  background-color: #e7305b;
   color: white;
   }
   
@@ -68,7 +68,7 @@
   .triangleshape {
     z-index: 1;
     width: 100%;
-    background-color: #9f9f9f;
+    background-color: #282931;
     padding: 25px;
     clip-path: polygon(100% 0%, 0 0, 80% 100%);
     top: 107px;
