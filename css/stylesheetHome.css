@@ -25,22 +25,21 @@ body {
 /* Responsive image gallery rules begin*/
  /* Mobile first */
 .image-gallery {
-
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 2vh;
 }
 
 .image-gallery .column {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2vh;
 }
 
 .mobile-column {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 2vh;
 }
 
 .image-item img {
