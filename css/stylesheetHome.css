@@ -37,6 +37,12 @@ body {
     gap: 50px;
 }
 
+.mobile-column {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
 .image-item img {
     /* Mobile first */
     width: 100%;
@@ -44,15 +50,16 @@ body {
     height: 100%;
     object-fit: cover;
     max-width: 100%;
+    
 }
 
 
 /* overlay styles */
 
 .image-item {
-
     position: relative;
     cursor: pointer;
+    max-height: fit-content;
 
 }
 

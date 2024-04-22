@@ -1,12 +1,19 @@
 //selects all elements with the id responsive-image and creats a NodeList with them
-const test = document.querySelectorAll("#responsive-image");
+const imageanimation = document.querySelectorAll("#responsive-image");
+const mobilecolumn = document.querySelectorAll("#mobileGallery");
 
 function mediasize(x) {
     if (x.matches) {
         // Iterate over each element in the NodeList
-        test.forEach(function(element) {
+        imageanimation.forEach(function(element) {
             element.classList.add("image-item", "wow", "fadeInUpBig");
+           
+
         });
+
+        mobilecolumn.forEach(function(element){
+            element.classList.add("mobile-column")
+        })
     } 
 }
 
