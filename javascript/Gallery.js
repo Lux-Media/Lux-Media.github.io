@@ -20,3 +20,4 @@ mediasize(mmObj);
 mmObj.addEventListener('change', function() {
     mediasize(mmObj);
 });
+
