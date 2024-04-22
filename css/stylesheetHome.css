@@ -27,19 +27,19 @@ body {
 .image-gallery {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2vw;
 }
 
 .image-gallery .column {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2vw;
 }
 
 .mobile-column {
     display: flex;
     flex-direction: row;
-    gap: 2vh;
+    gap: 2vw;
 }
 
 .image-item img {
@@ -86,7 +86,7 @@ body {
 @media only screen and (min-width: 768px) {
     .image-gallery {
         flex-direction: row;
-        gap: 50px;
+        gap: 3vw;
     }
 
     .image-item img{
@@ -94,12 +94,12 @@ body {
     }
 
     .image-gallery .column{
-        gap: 50px;
+        gap: 3vw;
     }
 
     .test{
         display: flex;
-        gap: 50px;
+        gap: 3vw;
     }
 }
 
