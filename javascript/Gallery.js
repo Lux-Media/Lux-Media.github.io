@@ -5,16 +5,28 @@ const mobilecolumn = document.querySelectorAll("#mobileGallery");
 function mediasize(x) {
     if (x.matches) {
         // Iterate over each element in the NodeList
-        imageanimation.forEach(function(element) {
+        imageanimation.forEach(function (element) {
             element.classList.add("image-item", "wow", "fadeInUpBig");
-           
+
 
         });
 
-        mobilecolumn.forEach(function(element){
+        mobilecolumn.forEach(function (element) {
             element.classList.add("mobile-column")
-        })
-    } 
+        });
+    }
+    else {
+        // Iterate over each element in the NodeList
+        imageanimation.forEach(function (element) {
+            element.classList.remove("wow", "fadeInUpBig");
+
+
+        });
+
+        mobilecolumn.forEach(function (element) {
+            element.classList.remove("mobile-column")
+        });
+    }
 }
 
 //gives mmObj the value of the matchMedia function which is true when the screen is less than 768px
@@ -24,7 +36,7 @@ const mmObj = window.matchMedia("(max-width: 768px)");
 mediasize(mmObj);
 
 //adds an EventListener which listens for changes and than calls the mediasize function
-mmObj.addEventListener('change', function() {
+mmObj.addEventListener('change', function () {
     mediasize(mmObj);
 });
 

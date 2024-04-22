@@ -23,9 +23,9 @@ body {
 }
 
 /* Responsive image gallery rules begin*/
-
+ /* Mobile first */
 .image-gallery {
-    /* Mobile first */
+
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -34,17 +34,16 @@ body {
 .image-gallery .column {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
 }
 
 .mobile-column {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 25px;
 }
 
 .image-item img {
-    /* Mobile first */
     width: 100%;
     border-radius: 5px;
     height: 100%;
@@ -88,10 +87,20 @@ body {
 @media only screen and (min-width: 768px) {
     .image-gallery {
         flex-direction: row;
+        gap: 50px;
     }
 
     .image-item img{
         max-width: 350px;
+    }
+
+    .image-gallery .column{
+        gap: 50px;
+    }
+
+    .test{
+        display: flex;
+        gap: 50px;
     }
 }
 
