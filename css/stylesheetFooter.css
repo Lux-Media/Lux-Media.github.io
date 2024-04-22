@@ -6,28 +6,19 @@
     position: absolute;
     width: 100%;
     overflow: hidden;
-    z-index: -1
+    z-index: -1;
 }
 
 canvas {
     position: absolute;
-    top: 0
+    top: 0;
 }
+
 
 .footer-icons,
 .footer-links {
     z-index: 1;
     position: relative
-}
-
-.footer-distributed .footer-links a:hover {
-    color: #fc3565;
-    text-decoration: none;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s
 }
 
 * {
@@ -39,7 +30,18 @@ canvas {
     width: 100%;
     font: bold 16px sans-serif;
     padding: 55px 50px;
-    bottom: auto
+    bottom: auto;
+}
+
+
+.footer-distributed .footer-links a:hover {
+    color: #fc3565;
+    text-decoration: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 .footer-distributed .footer-center,

@@ -6,13 +6,16 @@ body {
 
 .container {
     padding: 40px 5%;
+    padding-top: 0px;
     position: relative;
     z-index: -1;
+
 }
 
 .heading-text {
     margin-bottom: 2rem;
     font-size: 2rem;
+    margin-top: 0.5rem;
 }
 
 .heading-text span {
@@ -25,28 +28,32 @@ body {
     /* Mobile first */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
 }
 
 .image-gallery .column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
 }
 
 .image-item img {
+    /* Mobile first */
     width: 100%;
     border-radius: 5px;
     height: 100%;
     object-fit: cover;
+    max-width: 100%;
 }
 
 
 /* overlay styles */
 
 .image-item {
+
     position: relative;
     cursor: pointer;
+
 }
 
 .overlay {
@@ -63,6 +70,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 }
 
 /* hover */
@@ -73,6 +81,10 @@ body {
 @media only screen and (min-width: 768px) {
     .image-gallery {
         flex-direction: row;
+    }
+
+    .image-item img{
+        max-width: 350px;
     }
 }
 
