@@ -90,7 +90,7 @@ body {
     }
 
     .image-item img{
-        max-width: 350px;
+        max-width: 20vw;
     }
 
     .image-gallery .column{
