@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    padding: 40px 5%;
+    padding: 2.604vw 4.883vw;
     padding-top: 0px;
     position: relative;
     z-index: -1;
@@ -83,6 +83,8 @@ body {
     transform: scale(1);
 }
 
+
+/*styles the desktop version of the website*/
 @media only screen and (min-width: 768px) {
     .image-gallery {
         flex-direction: row;
@@ -97,7 +99,7 @@ body {
         gap: 3vw;
     }
 
-    .test{
+    .column-wrap{
         display: flex;
         gap: 3vw;
     }

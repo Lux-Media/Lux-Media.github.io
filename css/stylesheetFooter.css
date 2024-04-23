@@ -4,7 +4,7 @@
     background: #282931;
     height: 60vh;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     z-index: -1;
 }
@@ -21,9 +21,9 @@ canvas {
 /*styles the footer itself*/
 .footer-distributed {
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     font: bold 16px sans-serif;
-    padding: 55px 50px;
+    padding: 7.563vh 3.255vw;
     bottom: auto;
 }
 
@@ -218,7 +218,7 @@ canvas {
     .footer-distributed .footer-left,
     .footer-distributed .footer-right {
         display: block;
-        width: 100%;
+        width: 100vw;
         margin-bottom: 40px;
         text-align: center
     }
@@ -231,7 +231,7 @@ canvas {
         background: #282931;
         height: 100vh;
         position: absolute;
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
         z-index: -1
     }
