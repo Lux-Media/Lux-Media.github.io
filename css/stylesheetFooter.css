@@ -25,6 +25,7 @@ canvas {
     font: bold 16px sans-serif;
     padding: 7.563vh 3.255vw;
     bottom: auto;
+
 }
 
 /*puts the links and the icons in front of the canvas so the particels are behind them*/
@@ -209,7 +210,7 @@ canvas {
 }
 
 /*mobile verion of the footer*/
-@media (max-width:880px) {
+@media (max-width:768px) {
     .footer-distributed {
         font: bold 14px sans-serif
     }
@@ -218,9 +219,9 @@ canvas {
     .footer-distributed .footer-left,
     .footer-distributed .footer-right {
         display: block;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 40px;
-        text-align: center
+        text-align: center;
     }
 
     .footer-distributed .footer-center i {
@@ -243,5 +244,9 @@ canvas {
     .footer-center-container p {
         position: relative;
         z-index: 1
+    }
+
+    .footer-distributed .footer-company-about {
+        padding: 10px;
     }
 }

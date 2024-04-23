@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    justify-content: center;
 }
 
 .image-gallery .column {
