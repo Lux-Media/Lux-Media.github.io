@@ -37,7 +37,7 @@ canvas {
 
 /*changes the color of the links in the footer when hovered on*/
 .footer-distributed .footer-links a:hover {
-    color: #fc3565;
+    color: #e66e00;;
     text-decoration: none;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -67,7 +67,7 @@ canvas {
 }
 
 .footer-distributed h3 span {
-    color: #fc3565
+    color: #e66e00;
 }
 
 /*styles the left footer box*/
@@ -141,7 +141,7 @@ canvas {
 }
 
 .footer-distributed .footer-center p a {
-    color: #fc3565;
+    color: #e66e00;;
     text-decoration: none
 }
 
@@ -201,7 +201,7 @@ canvas {
 }
 
 .footer-distributed .footer-icons a:hover {
-    color: #fc3565;
+    color: #e66e00;;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;

@@ -83,7 +83,7 @@ document.addEventListener('scroll', (event) => {
   const z = document.getElementById("triangle");
   const s = document.getElementById("site-content-buffer");
 
-  if(document.documentElement.scrollTop > 135) {
+  if(document.documentElement.scrollTop > 100) {
     if(z.className === "triangle-wrap sticky"){
       z.classList.add("responsive");
       s.classList.add("responsive");
