@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 /*styles the canvas thats used to display the particel*/
 .canvas {
-    background: #282931;
+    background: #002530;
     height: 60vh;
     position: absolute;
     width: 100vw;
@@ -229,7 +229,7 @@ canvas {
     }
 
     .canvas {
-        background: #282931;
+        background: #002530;
         height: 100vh;
         position: absolute;
         width: 100vw;

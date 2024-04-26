@@ -3,7 +3,7 @@
   /* Style the header */
   .header {
   overflow: hidden;
-  background-color: #282931;
+  background-color: #002e3c;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
   
   /* Style the active/current link*/
   .header a.active {
-  background-color: #e7305b;
+  background-color: #e66e00;
   color: white;
   }
   
@@ -57,6 +57,7 @@
   .sticky {
     position: sticky;
     top: 0px;
+    z-index: 1;
   }
 
   /*wraps the triangle and its shadow*/
@@ -68,7 +69,7 @@
   .triangleshape {
     z-index: 1;
     width: 100vw;
-    background-color: #282931;
+    background-color: #002e3c;
     padding: 3.438vh 1.628vw;
     clip-path: polygon(100% 0%, 0 0, 80% 100%);
     top: 14.714vh;
@@ -79,7 +80,7 @@
     position: absolute;
     max-width: 100%;
     z-index: -1;
-    background-color: #727272;
+    background-color: #00232e;
     padding: 30px;
     clip-path: polygon(100% 0%, 10% 10%, 80% 100%);
     top: 0px;

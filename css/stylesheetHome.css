@@ -1,14 +1,12 @@
-body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    z-index: -2;
-    position: relative;
-}
+
 
 .container {
     padding: 2.604vw 4.883vw;
     padding-top: 0px;
+    padding-bottom: 70px;
     position: relative;
-    z-index: -1;
+    z-index: -4;
+
 
 }
 
@@ -16,13 +14,16 @@ body {
     margin-bottom: 2rem;
     font-size: 2rem;
     margin-top: 0.5rem;
+    color: white;
 }
 
 .heading-text span {
     font-weight: 100;
 }
 
-/*styles the zoom indicator of full screen gallery*/
+
+
+/*styles the zoom indicator of the full screen gallery*/
 .pswp__zoom-level-indicator {
     font-size: 16px;
     line-height: 1;
@@ -71,6 +72,7 @@ body {
     position: relative;
     cursor: pointer;
     max-height: fit-content;
+    box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
 
 }
 
