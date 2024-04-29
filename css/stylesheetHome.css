@@ -11,10 +11,11 @@
 }
 
 .heading-text {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    margin-top: 0.5rem;
-    color: white;
+    font-size: 55px;
+    color: #87A4B6;
+    font-weight: 700;
+    padding: 50px 0px;
+    padding-bottom: 25px;
 }
 
 .heading-text span {
