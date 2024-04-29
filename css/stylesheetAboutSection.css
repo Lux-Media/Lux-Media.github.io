@@ -64,6 +64,7 @@
     }
 }
 
+
 .about-me .about-me-container .about-me-title {
     font-size: 55px;
     color: #87A4B6;
@@ -174,6 +175,13 @@
 @media (max-width: 960px) {
     .about-me-flex-container .about-me-content {
         flex-direction: row-reverse;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .about-me-flex-container .about-me-content {
+        gap: 0px;
     }
 }
 
