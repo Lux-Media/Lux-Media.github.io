@@ -186,7 +186,13 @@
 }
 
 .about-me-flex-container .about-me-content .logo {
-    max-width: 200px;
+    max-width: 200px;  
+}
+
+@media (max-width: 500px) {
+    .about-me-flex-container .about-me-content .logo {
+        max-width: 125px;
+    }
 }
 
 .about-me-flex-container .about-me-content .logo img {
