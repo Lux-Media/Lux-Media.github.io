@@ -121,6 +121,7 @@
     background-color: #013747;
     width: 80%;
     height: 80%;
+    animation: hover 5s ease-in-out infinite;
 }
 
 .about-me-flex-container .about-me-image .black-image {
@@ -129,6 +130,7 @@
     left: 10px;
     bottom: 10px;
     height: 100%;
+    animation: hover 5s ease-in-out infinite 0.5s;
 }
 
 .about-me-flex-container .about-me-image .black-image img {
@@ -144,12 +146,14 @@
     top: 5%;
     box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
     transition: all 0.2s ease-out;
+    animation: hover 5s ease-in-out infinite 1s;
 }
 
 .about-me-flex-container .about-me-image .main-image:hover {
     transform-origin: top center;
     transform: scale(1.5);
     border-radius: 25px;
+    animation: none;
 }
 
 .about-me-flex-container .about-me-image .main-image img {
@@ -217,6 +221,11 @@
     }
 }
 
+@keyframes hover {
+    50% {
+      transform: translateY(20px);
+    }
+  }
 
 
 .mail-button {

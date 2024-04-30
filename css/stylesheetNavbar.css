@@ -3,7 +3,7 @@
   /* Style the header */
   .header {
   overflow: hidden;
-  background-color: #002e3c;
+  background-color: #001925;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -31,6 +31,7 @@
   font-family: "Montserrat", sans-serif;
   }
 
+  /*Styles the orange section of the Logo in the Navbar*/
   .orange-logo {
     font-family: 	"Montserrat", sans-serif;
     color: #FF7A01;
@@ -75,7 +76,7 @@
   .triangleshape {
     z-index: 1;
     width: 100vw;
-    background-color: #002e3c;
+    background-color: #001925;
     padding: 3.438vh 1.628vw;
     clip-path: polygon(100% 0%, 0 0, 80% 100%);
     top: 14.714vh;
@@ -86,7 +87,7 @@
     position: absolute;
     max-width: 100%;
     z-index: -1;
-    background-color: #00232e;
+    background-color: #00151f;
     padding: 30px;
     clip-path: polygon(100% 0%, 10% 10%, 80% 100%);
     top: 0px;

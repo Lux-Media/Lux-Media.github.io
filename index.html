@@ -17,6 +17,7 @@
   <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
   <script>new WOW().init();</script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="javascript/Cookies.js"></script>
 </head>
 
 <body>
@@ -71,7 +72,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="mail-button mail-button2">
           <a href="mailto:lukas.woelfert1@gmail.com"><img
               src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/mail.svg"
@@ -83,197 +84,200 @@
     </div>
   </section>
 
-  <div class="container">
-    <h2 class="heading-text">My work</h2>
-    <div class="image-gallery pswp-gallery" id="my-gallery">
+  <section class="gallery-section" id="gallery">
 
-      <!--column 1-->
-      <div class="column-wrap" id="mobileGallery">
-        <div class="column">
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild1.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345" 
-               target="_blank">
-              <img src="Pictures\testbild1.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
+    <div class="container">
+      <h2 class="heading-text">My work</h2>
+      <div class="image-gallery pswp-gallery" id="my-gallery">
+
+        <!--column 1-->
+        <div class="column-wrap" id="mobileGallery">
+          <div class="column">
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild1.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345" 
+                target="_blank">
+                <img src="Pictures\testbild1.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild2.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345" 
+                target="_blank">
+                <img src="Pictures\testbild2.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild3.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345" 
+                target="_blank">
+                <img src="Pictures\testbild3.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild15.jpg" 
+                data-pswp-width="3926" 
+                data-pswp-height="2616" 
+                target="_blank">
+                <img src="Pictures\testbild15.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
           </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild2.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345" 
-               target="_blank">
-              <img src="Pictures\testbild2.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild3.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345" 
-               target="_blank">
-              <img src="Pictures\testbild3.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild15.jpg" 
-               data-pswp-width="3926" 
-               data-pswp-height="2616" 
-               target="_blank">
-              <img src="Pictures\testbild15.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
+
+          <!--column 2-->
+          <div class="column">
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild4.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild4.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild8.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345" 
+                target="_blank">
+                <img src="Pictures\testbild8.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild6.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild6.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild7.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild7.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild14.jpg" 
+                data-pswp-width="2584" 
+                data-pswp-height="3876" 
+                target="_blank">
+                <img src="Pictures\testbild14.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+
           </div>
         </div>
 
-        <!--column 2-->
-        <div class="column">
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild4.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild4.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild8.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345" 
-               target="_blank">
-              <img src="Pictures\testbild8.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild6.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild6.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild7.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild7.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild14.jpg" 
-               data-pswp-width="2584" 
-               data-pswp-height="3876" 
-               target="_blank">
-              <img src="Pictures\testbild14.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
+        <!--column 3-->
+        <div class="column-wrap" id="mobileGallery">
+          <div class="column">
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild14.jpg" 
+                data-pswp-width="2584" 
+                data-pswp-height="3876" 
+                target="_blank">
+                <img src="Pictures\testbild14.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>              
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild9.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild9.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild10.jpg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild10.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild11.jpg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild11.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild14.jpg" 
+                data-pswp-width="2584" 
+                data-pswp-height="3876" 
+                target="_blank">
+                <img src="Pictures\testbild14.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
           </div>
 
+          <!--column 4-->
+          <div class="column">
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild1.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345"   
+                target="_blank">
+                <img src="Pictures\testbild1.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild2.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345" 
+                target="_blank">
+                <img src="Pictures\testbild2.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild3.jpeg" 
+                data-pswp-width="1875" 
+                data-pswp-height="2345" 
+                target="_blank">
+                <img src="Pictures\testbild3.jpeg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+            <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
+              <a href="Pictures\testbild13.jpg" 
+                data-pswp-width="1875" 
+                data-pswp-height="1875" 
+                target="_blank">
+                <img src="Pictures\testbild13.jpg" alt="" />
+                <div class="overlay"><span>Image title</span></div>
+              </a>
+            </div>
+          </div>
         </div>
+
       </div>
-
-      <!--column 3-->
-      <div class="column-wrap" id="mobileGallery">
-        <div class="column">
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild14.jpg" 
-               data-pswp-width="2584" 
-               data-pswp-height="3876" 
-               target="_blank">
-              <img src="Pictures\testbild14.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>              
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild9.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild9.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild10.jpg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild10.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild11.jpg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild11.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild14.jpg" 
-               data-pswp-width="2584" 
-               data-pswp-height="3876" 
-               target="_blank">
-              <img src="Pictures\testbild14.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-        </div>
-
-        <!--column 4-->
-        <div class="column">
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild1.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345"   
-               target="_blank">
-              <img src="Pictures\testbild1.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild2.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345" 
-               target="_blank">
-              <img src="Pictures\testbild2.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild3.jpeg" 
-               data-pswp-width="1875" 
-               data-pswp-height="2345" 
-               target="_blank">
-              <img src="Pictures\testbild3.jpeg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-          <div class="image-item wow fadeInUpBig" data-wow-duration="1.2s">
-            <a href="Pictures\testbild13.jpg" 
-               data-pswp-width="1875" 
-               data-pswp-height="1875" 
-               target="_blank">
-              <img src="Pictures\testbild13.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-  <script type="module" src="javascript\Gallery.js"></script>
+    <script type="module" src="javascript\Gallery.js"></script>
 
+  </section>
 
 
   <footer>
@@ -285,7 +289,7 @@
 
           <p class="footer-links">
 
-            <a href="index.html" class="link-1">Portfolio</a>
+            <a href="#gallery" class="link-1">Portfolio</a>
 
             <a href="contact.html">Kontakt</a>
 

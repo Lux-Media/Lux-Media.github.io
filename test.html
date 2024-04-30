@@ -1,52 +1,22 @@
 <html>
     <head>
-        <link rel="stylesheet" href="test.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Test Webseite</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="javascript/Cookies.js"></script>
+      <link rel="stylesheet" href="test.css">
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     </head>
     <body>
-        <section class="about-me" id="about-me">
-            <div class="container">
-              <div class="about-me-container">
-                <div class="about-me-title">
-                  About <br> Lukas Wölfert
-                </div>
-          
-                <div class="about-me-flex-container">
-                  <div class="about-me-image">
-                    <div class="back-div"></div>
-                    <div class="black-image"><img src="Pictures\DSCF1745.jpg" alt="black"></div>
-                    <div class="main-image"><img src="Pictures\DSCF17452.jpg" alt=""></div>
-                  </div>
-                  <div class="about-me-content">
-          
-                    <div class="logo"><img src="Pictures\LOGO.svg" alt=""></div>
-          
-                    <div class="text">
-                      An ambitious Front-end Developer and designer who takes great pride in the presentation and quality of work. 
-          
-                      <br><br>
-          
-                      Smit is someone who can design and create simple, beautiful and easy to understand things. He is an expert at taking designs into original, exciting and new directions. 
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="mail-button mail-button2">
-                  <a href="mailto:lukas.woelfert1@gmail.com"><img src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/mail.svg" alt="mail"></a>
-                </div>
-          
-              </div>
-          
-            </div>
-          </section>
-          
-          
-          
-          
-          
-          
-          <br><br>
-          <div class = "portfolio-link">
-            <a href="" target="_blank"> My Portfolio </a>
-          </div>        
+      <h1 data-step="1" data-intro="Hello all! :) This project's called Intro.js.">Intro<span style="font-weight: normal;">.js</span></h1>
+      <script>
+        var name = 'IntroJS';
+        var value = $.cookie(name);
+
+        introJs().start().oncomplete(function() {
+        $.cookie(name, 1);
+        });
+      </script>
     </body>
 </html>
