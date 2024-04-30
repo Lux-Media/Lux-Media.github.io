@@ -1,16 +1,14 @@
-
-  
-  /* Style the header */
-  .header {
+/* Style the header */
+.header {
   overflow: hidden;
   background-color: #001925;
   padding: 16px;
   display: flex;
   align-items: center;
-  }
-  
-  /* Style the links inside the header */
-  .header a {
+}
+
+/* Style the links inside the header */
+.header a {
   float: left;
   color: white;
   text-align: center;
@@ -21,109 +19,161 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-  }
-  
-  /* Style the logo link */
-  .header a.logo {
+  transform-origin: center right;
+  transform: translateX(-2000%);
+  animation: nav-links-animation 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.header a:nth-child(2){
+  animation-delay: 0.7s;
+}
+.header a:nth-child(3){
+  animation-delay: 0.6s;
+}
+.header a:nth-child(4){
+  animation-delay: 0.5s;
+}
+
+/* Style the logo link */
+.header a.logo {
   font-size: 30px;
   font-weight: bold;
   padding: 25px;
   font-family: "Montserrat", sans-serif;
-  }
+  transform-origin: center right;
+  transform: translateX(-500%);
+  animation: nav-links-animation 1.5s ease-in-out 0.8s;
+  animation-fill-mode: forwards;
 
-  /*Styles the orange section of the Logo in the Navbar*/
-  .orange-logo {
-    font-family: 	"Montserrat", sans-serif;
-    color: #FF7A01;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
+}
+
+/*Styles the orange section of the Logo in the Navbar*/
+.orange-logo {
+  font-family: "Montserrat", sans-serif;
+  color: #FF7A01;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
   background-color: #87A4B6;
   color: black;
-  }
-  
-  /* Style the active/current link*/
-  .header a.active {
+}
+
+/* Style the active/current link*/
+.header a.active {
   background-color: #e66e00;
   color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-content {
+}
+
+/* Float the link section to the right */
+.header-content {
   margin-left: auto;
   margin-right: 2%;
-  }
-  
-  /* Hides the link that should open and close the topnav on small screens */
-  .header .icon {
+}
+
+/* Hides the link that should open and close the topnav on small screens */
+.header .icon {
   display: none;
-  }
-  
-  /* makes the navbar stick to the top when scrolling*/
-  .sticky {
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-  }
+}
 
-  /*wraps the triangle and its shadow*/
-  .triangle-wrap {
-    display: flex;
-  }
+/* makes the navbar stick to the top when scrolling*/
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
 
-  /*adds a triangle shape below the navbar by creating a second triangle and hidding it behind the first one*/
-  .triangleshape {
-    z-index: 1;
-    width: 100vw;
-    background-color: #001925;
-    padding: 3.438vh 1.628vw;
-    clip-path: polygon(100% 0%, 0 0, 80% 100%);
-    top: 14.714vh;
-  }
+/*wraps the triangle and its shadow*/
+.triangle-wrap {
+  display: flex;
+}
 
-  /*adds a shadow to the triangle below the navbar*/
-  .triangleshadow {
-    position: absolute;
-    max-width: 100%;
-    z-index: -1;
-    background-color: #00151f;
-    padding: 30px;
-    clip-path: polygon(100% 0%, 10% 10%, 80% 100%);
-    top: 0px;
-    left: 0px;
-    right: 0px;
-  }
+/*adds a triangle shape below the navbar by creating a second triangle and hidding it behind the first one*/
+.triangleshape {
+  z-index: 1;
+  width: 100vw;
+  background-color: #001925;
+  padding: 3.438vh 1.628vw;
+  clip-path: polygon(100% 0%, 0 0, 80% 100%);
+  top: 14.714vh;
+}
+
+/*adds a shadow to the triangle below the navbar*/
+.triangleshadow {
+  position: absolute;
+  max-width: 100%;
+  z-index: -1;
+  background-color: #00151f;
+  padding: 30px;
+  clip-path: polygon(100% 0%, 10% 10%, 80% 100%);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
 
 /*hides the triangle shape and the shadow below the navbar*/
-  .triangle-wrap.sticky.responsive {
-    display: none;
+.triangle-wrap.sticky.responsive {
+  display: none;
+}
+
+@keyframes nav-links-animation {
+  0% {
+    transform: translateX(-2000%);
   }
 
+  50% {
+    transform: translateX(-2000%);
+  }
 
-  /* this code changes how the Nacbar looks before opened when the screen is smaller than 600px*/
-  /* When the screen is less than 600 pixels wide, hide all links. Show the link that should open and close the topnav (.icon) */
-  @media screen and (max-width: 768px) {
+  65% {
+    transform: translateX(0%);
+  }
+
+  66% {
+    transform: scale(1.1, 0.5);
+  }
+
+  80% {
+    transform: scale(0.5, 1.1);
+  }
+
+  85% {
+    transform: scale(0.9, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+/* this code changes how the Nacbar looks before opened when the screen is smaller than 600px*/
+/* When the screen is less than 600 pixels wide, hide all links. Show the link that should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
   .header a {
     display: none;
   }
+
   .header a.icon {
     display: flex;
     margin-left: auto;
   }
-  .header a.logo{
+
+  .header a.logo {
     float: left;
     display: block;
   }
-  }
-  
-  /* this code opens the navbar when the screen is smaller than 600px is*/
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 768px) {
+}
+
+/* this code opens the navbar when the screen is smaller than 600px is*/
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
   .header.responsive {
     position: relative;
-    display: block;    
+    display: block;
   }
+
   .header.responsive a.icon {
     display: none;
     align-items: center;
@@ -135,4 +185,4 @@
     display: block;
     text-align: left;
   }
-  }
+}

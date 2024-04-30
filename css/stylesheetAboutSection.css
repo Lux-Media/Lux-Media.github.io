@@ -189,22 +189,23 @@
     }
 }
 
-.about-me-flex-container .about-me-content .logo {
+.about-me-flex-container .about-me-content .logo2 {
     max-width: 200px;  
+    animation: drop-in 1.5s ease-in;
 }
 
 @media (max-width: 500px) {
-    .about-me-flex-container .about-me-content .logo {
+    .about-me-flex-container .about-me-content .logo2 {
         max-width: 125px;
     }
 }
 
-.about-me-flex-container .about-me-content .logo img {
+.about-me-flex-container .about-me-content .logo2 img {
     filter: drop-shadow(0 0 25px rgb(0, 0, 0));
 }
 
 @media (max-width: 500px) {
-    .about-me-flex-container .about-me-content .logo img {
+    .about-me-flex-container .about-me-content .logo2 img {
         transform: rotateZ(90deg);
     }
 }
@@ -247,7 +248,6 @@
     -o-object-fit: contain;
     object-fit: contain;
     transition: all 0.2s ease-out;
-    
     width: 100%;
     height: 100%;
 }
@@ -259,6 +259,12 @@
     bottom: 0;
     left: 0;
     border: 10px solid #001925;
+}
+
+@media (min-width: 960px) and (min-height: 690px){
+    .mail-button2 {
+        animation: drop-in 1.5s ease-in;
+    }
 }
 
 .mail-button2 img {
@@ -274,6 +280,30 @@
     filter: unset;
     transform: scale(1.5);
 }
+
+@keyframes drop-in {
+    0% {
+      transform: translateY(-100vh);
+    }
+    50% {
+      transform: translateY(-100vh);
+    }
+    65% {
+      transform: translateY(0%);
+    }
+    66% {
+      transform: scale(1.1, 0.5);
+    }
+    80% {
+      transform: scale(0.5, 1.1);
+    }
+    85% {
+      transform: scale(0.9, 1);
+    }
+    90% {
+      transform: scale(1, 1);
+    }
+  }
 
 .portfolio-link {
 
