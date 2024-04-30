@@ -36,6 +36,7 @@ body {
   display: flex;
   border-left: 5px solid #FF7A01;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  animation: drop-in 1.5s ease-in;
 }
 @media (max-width: 1200px) {
   .form-container {
@@ -146,4 +147,28 @@ body {
 .form-container .form .button-container .reset-button-container .reset-button:hover {
   background: #FF7A01;
   color: #001925;
+}
+
+@keyframes drop-in {
+  0% {
+    transform: translateY(-100vh);
+  }
+  50% {
+    transform: translateY(-100vh);
+  }
+  65% {
+    transform: translateY(0%);
+  }
+  66% {
+    transform: scale(1.1, 0.5);
+  }
+  80% {
+    transform: scale(0.5, 1.1);
+  }
+  85% {
+    transform: scale(0.9, 1);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
 }
