@@ -153,6 +153,9 @@
 @media screen and (max-width: 768px) {
   .header a {
     display: none;
+    transform: translateX(0%);
+    animation: none;
+    animation-fill-mode:none;
   }
 
   .header a.icon {
