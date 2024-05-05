@@ -172,3 +172,111 @@ body {
     transform: scale(1, 1);
   }
 }
+
+/*social media section*/
+
+
+#social-media-links-container {
+  transform-origin: bottom center;
+  transform: translateX(250%) rotate(0deg);
+  animation: social-media-links-load 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.social-media-links-container {
+  height: 380px;
+  width: 100px;
+  right: 0px;
+  top:40%;
+  position: absolute;
+}
+
+.social-media-links-container .icons-cotainer {
+  width: 100%;
+  height: 275px;
+  background-color: #001925;
+  padding-top: 1px;
+}
+
+.social-media-links-container .follow-me {
+  position: absolute;
+  bottom: 0px;
+  writing-mode: vertical-rl;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px 0px;
+  background-color: #FF7A01;
+  color: white;
+}
+
+.social-media-links-container .icons-cotainer img {
+  display: block;
+  margin: 40px auto;
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s ease-out;
+}
+
+
+.social-media-links-container .icons-cotainer img:hover {
+  filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
+  transform: scale(1.5);
+}
+
+@keyframes social-media-links-load{
+  0% {
+    transform: translateX(250%) rotate(90deg);
+  }
+  65% {
+    transform: translatex(0%) rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  85% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0%);
+  }
+}
+
+@media (max-width: 1100px) {
+  .social-media-links-container {
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    top: unset;
+    height: auto;
+    width: auto;
+    border-top-left-radius: 25px;
+    box-shadow: rgba(255, 94, 0, 0.9) 0px 0px 10px 0px;
+  }
+  .social-media-links-container .icons-cotainer {
+    display: flex;
+    gap: 15px;
+    height: auto;
+    background-color: #FF7A01;
+    padding: 0px 25px;
+  }
+  .social-media-links-container .icons-cotainer img {
+    margin: 10px auto;
+    height: 25px;
+    width: 25px;
+    filter: invert(1);
+    filter: brightness(0);
+  }
+  .social-media-links-container .follow-me {
+    display: none;
+  }
+}
+

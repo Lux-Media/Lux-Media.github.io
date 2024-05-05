@@ -105,7 +105,7 @@
   max-width: 100%;
   z-index: -1;
   background-color: #00151f;
-  padding: 30px;
+  padding: 4.125vh;
   clip-path: polygon(100% 0%, 10% 10%, 80% 100%);
   top: 0px;
   left: 0px;
