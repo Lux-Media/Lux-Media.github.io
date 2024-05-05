@@ -74,7 +74,7 @@
     cursor: pointer;
     max-height: fit-content;
     box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
-
+    transition: all 0.3s ease-in 0s;
 }
 
 .overlay {
@@ -98,6 +98,12 @@
 .image-item:hover .overlay {
     transform: scale(1);
 }
+
+.image-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+    transform: scale(1.1);
+}
+
 
 
 /*styles the desktop version of the website*/
