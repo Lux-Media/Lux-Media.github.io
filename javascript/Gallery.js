@@ -60,10 +60,11 @@ lightbox.on('uiRegister', function () {
     onInit: (el, pswp) => {
       pswp.on('zoomPanUpdate', (e) => {
         if (e.slide === pswp.currSlide) {
-          el.innerText = 'Zoom level is ' + Math.round(pswp.currSlide.currZoomLevel * 100) + '%';
+          el.innerText = 'Zoom level ' + Math.round(pswp.currSlide.currZoomLevel * 100) + '%';
         }
       });
     }
   });
 });
 lightbox.init();
+
