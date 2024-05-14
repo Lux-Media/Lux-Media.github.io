@@ -21,7 +21,7 @@ p {
 /*this code is necessary because the imprint adds another button to the navbar which makes it wider and the original media query only 
 works when the screen is 600px wide. But with the extra button the navbar aready needs to be changed when the screen is 800px*/ 
 
-/* this code changes how the Nacbar looks before opened when the screen is smaller than 600px*/
+/* this code changes how the Navbar looks before opened when the screen is smaller than 600px*/
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
     .header a {

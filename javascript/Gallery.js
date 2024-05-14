@@ -7,8 +7,6 @@ function mediasize(x) {
         // Iterate over each element in the NodeList
         imageanimation.forEach(function (element) {
             element.classList.add("image-item", "wow", "fadeInUpBig");
-
-
         });
 
         mobilecolumn.forEach(function (element) {
@@ -19,8 +17,6 @@ function mediasize(x) {
         // Iterate over each element in the NodeList
         imageanimation.forEach(function (element) {
             element.classList.remove("wow", "fadeInUpBig");
-
-
         });
 
         mobilecolumn.forEach(function (element) {
