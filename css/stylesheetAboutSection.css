@@ -180,6 +180,10 @@
     .about-me-flex-container .about-me-content {
         flex-direction: row-reverse;
     }
+
+    .about-me-flex-container .about-me-content .logo2 {
+        align-self: center;
+    }
 }
 
 
@@ -194,9 +198,16 @@
     animation: drop-in 1.5s ease-in;
 }
 
+@media (min-width: 961px) {
+    .about-me-flex-container .about-me-content .logo2 {
+        align-self: start;
+    }
+}
+
 @media (max-width: 500px) {
     .about-me-flex-container .about-me-content .logo2 {
         max-width: 125px;
+        align-self: center;
     }
 }
 
@@ -207,6 +218,7 @@
 @media (max-width: 500px) {
     .about-me-flex-container .about-me-content .logo2 img {
         transform: rotateZ(90deg);
+        align-self: center;
     }
 }
 
