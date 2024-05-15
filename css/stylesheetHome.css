@@ -99,6 +99,13 @@
     transform: scale(1);
 }
 
+@media only screen and (max-width: 500px) {
+    .heading-text {
+        font-size: 30px;
+        padding-bottom: 12.5px;
+    }
+}
+
 
 /*styles the desktop version of the website*/
 @media only screen and (min-width: 768px) {
