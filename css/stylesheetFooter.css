@@ -226,7 +226,6 @@ canvas {
     }
 
     .canvas {
-        background: #002530;
         height: 100vh;
         position: absolute;
         width: 100vw;

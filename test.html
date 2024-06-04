@@ -4,46 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Webseite</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
   <link rel="stylesheet" href="test.css">
 
 </head>
 
 <body>
-  <div class="social-media-links-container" id="social-media-links-container">
-    <div class="icons-cotainer">
-        <a href="https://www.instagram.com/smit_29.6/" target="_blank"><img src="https://smit-prajapati.github.io/prajapatismit/images/insta.svg" alt="insta"></a>
-        <a href="https://twitter.com/SmiTp02" target="_blank"><img src="https://smit-prajapati.github.io/prajapatismit/images/twitter.svg" alt="twitter"></a>
-        <a href="https://www.linkedin.com/in/smit-prajapati-a533a7200" target="_blank"><img src="https://smit-prajapati.github.io/prajapatismit/images/linkedin.svg" alt="linkdin"></a>
-    </div>
-    <div class="follow-me">Follow me</div>
-</div>
-
-
-  <div class="form-container-main">
-    <div class="form-container">
-      <div class="form-image">
-        <h1 class="montserrat">Get in touch</h1>
-        <model-viewer class="model" alt="laptop" src="Pictures\gmail.glb" shadow-intensity="1" camera-controls
-          touch-action="pan-y"
-          environment-image="Pictures\dancing_hall_2k.hdr"
-          exposure="1.5" disable-zoom disable-tap camera-orbit="-45deg 60deg 9m" autoplay></model-viewer>
-      </div>
-      <form action="https://formspree.io/f/xnqewpby" method="POST" class="form">
-        <input type="text" id="name" name="name" placeholder="Name" autofocus="" required="">
-        <input type="email" id="mail" name="email" placeholder="Email" required="">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Say Hello" required=""></textarea>
-        <div class="button-container">
-          <input type="submit" class="send-button" value="Send">
-          <!-- <div class="send-button">Send</div> -->
-          <div class="reset-button-container">
-            <input type="reset" class="reset-button">
-          </div>
-        </div>
-      </form>
-    </div>
+ <!-- <div class='container'>
+    <div class='img background-img'></div>
+    <div class='img foreground-img'></div>
+    <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+    <div class='slider-button'></div>
   </div>
+
+  <script src="test.js"></script>-->
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="testimonials-title">Testimonials</div>
+        <div class="flex-container-outer">
+            <div class="box">
+                <div class="title">Versatile</div>
+
+                <div class="flex-container-testimonials">
+                    <div class="image-container">
+                        <img src="https://www.shape.com/thmb/XIVAqo_zKe3Cya2Ul27FQTRjTH8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Kiernan-Shipka-Workout-GettyImages-1160248128-0f7c555515ed4e5da5535d2ef51ed022.jpg" alt="person">
+                    </div>
+                    <div class="content">
+                        <div class="name">Kierna Shipka</div>
+                        <div class="text">He has true passion for Website development and is incredibly talented and skilled in it.
+                            His work is not only impressive but also demonstrates a deep understanding of the art form.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="title">Creative</div>
+                <div class="flex-container-testimonials">
+                    <div class="image-container">
+                        <img src="https://www.hollywoodreporter.com/wp-content/uploads/2020/05/elle_fanning_-_getty_-_h_2020_.jpg?w=1296" alt="person">
+                    </div>
+                    <div class="content">
+                        <div class="name">Elle Fanning</div>
+                        <div class="text">Smit is a top-notch UI/UX designer! Their impeccable design skills and user-focused approach delivered a stunning interface that perfectly represents our brand. Working with him was a pleasure, and I highly recommend their services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
 </body>
 
 </html>
+
+
