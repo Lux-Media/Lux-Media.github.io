@@ -153,6 +153,7 @@
     transform-origin: top center;
     transform: scale(1.5);
     border-radius: 25px;
+    transition: all 0.5 ease-out;
     animation: hover paused;
 }
 
