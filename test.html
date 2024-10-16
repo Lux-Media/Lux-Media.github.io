@@ -5,13 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Webseite</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script> 
+    function geeks() { 
+        alert("The current URL of this" 
+        + " page is: " + window.location.href); 
+    } 
+      
+    function change_url() { 
+        window.history.pushState("stateObj", 
+            "new page", "changedURL.html"); 
+          
+        alert("The URL of this page is: " 
+                + window.location.href); 
+    } 
+</script> 
 
 
   <link rel="stylesheet" href="test.css">
 
 </head>
 
-<body>
+<body onload="geeks()">
+
+    <a href="javascript:change_url()"> 
+        Click to change url 
+    </a> 
  <!-- <div class='container'>
     <div class='img background-img'></div>
     <div class='img foreground-img'></div>
