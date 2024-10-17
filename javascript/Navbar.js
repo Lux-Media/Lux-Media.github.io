@@ -47,6 +47,7 @@ document.addEventListener('click', (event) => {
   if (active.contains(event.target)) {
     $('html, body').animate({ scrollTop: 0 }, 'slow');  
   }
+  
 });
 
 
@@ -83,7 +84,7 @@ document.addEventListener('scroll', (event) => {
   const z = document.getElementById("triangle");
   const s = document.getElementById("site-content-buffer");
 
-  if(document.documentElement.scrollTop > 100) {
+  if(document.documentElement.scrollTop > 150) {
     if(z.className === "triangle-wrap sticky"){
       z.classList.add("responsive");
       s.classList.add("responsive");
