@@ -1,5 +1,4 @@
 //selects all elements with the id responsive-image and creats a NodeList with them
-
 const mobilecolumn = document.querySelectorAll("#mobileGallery");
 
 function mediasize(x) {
